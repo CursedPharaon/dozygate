@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dozy Gate — Ванильный сервер 1.21</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #16213e;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            z-index: 100;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .sticky-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid transparent;
+        }
+
+        .sticky-nav a:hover {
+            background: #e94560;
+            border-color: #ff6b81;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding: 40px 20px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e94560;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #f5a623;
+            margin-bottom: 25px;
+        }
+
+        .server-info {
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .server-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 12px 0;
+        }
+
+        .server-info strong {
+            color: #f5a623;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e94560;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin: 5px;
+        }
+
+        .vk-card {
+            display: inline-block;
+            background: #2787f5;
+            color: #fff;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: 0.3s;
+            margin: 20px 0 10px;
+            box-shadow: 0 4px 15px rgba(39, 135, 245, 0.4);
+        }
+
+        .vk-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(39, 135, 245, 0.6);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.07);
+            padding: 12px 22px;
+            border-radius: 12px;
+            border-left: 3px solid #e94560;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .sticky-nav { gap: 10px; }
+            .sticky-nav a { font-size: 0.95rem; padding: 6px 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sticky-nav">
+        <a href="index.html">🏠 Главная</a>
+        <a href="rules.html">📜 Правила</a>
+        <a href="howplay.html">🎮 Как начать играть</a>
+        <a href="https://vk.com/@-240269696" target="_blank">💬 ВК Сообщество</a>
+    </nav>
+
+    <div class="container">
+        <h1>⚔️ Dozy Gate</h1>
+        <p class="subtitle">✨ Ванильный сервер Minecraft 1.21 ✨</p>
+
+        <div class="server-info">
+            <p><strong>🔥 Полный ванильный опыт</strong> — никаких плагинов, только чистая игра!</p>
+            <p><strong>🌍 Открытый мир</strong> — строй, исследуй, выживай вместе с друзьями.</p>
+            <p><strong>🛡️ Честная игра</strong> — мы боремся с читерами и гриферами.</p>
+            <p><strong>📅 Дата открытия:</strong> Скоро!</p>
+            <p><span class="badge">📌 Версия 1.21</span> <span class="badge">🎮 Ваниль</span> <span class="badge">🌙 24/7</span></p>
+        </div>
+
+        <div class="features">
+            <span class="feature-item">🏗️ Строй без ограничений</span>
+            <span class="feature-item">⚡ Низкий пинг</span>
+            <span class="feature-item">👥 Дружное сообщество</span>
+        </div>
+
+        <a href="https://vk.com/@-240269696" target="_blank" class="vk-card">💬 Наше ВК Сообщество</a>
+        <p style="margin-top: 10px; opacity: 0.6; font-size: 0.9rem;">IP-адрес будет объявлен в ВК</p>
+    </div>
+
+</body>
+</html>
