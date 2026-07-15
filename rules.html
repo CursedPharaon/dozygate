@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила — Dozy Gate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #16213e;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            z-index: 100;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .sticky-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid transparent;
+        }
+
+        .sticky-nav a:hover {
+            background: #e94560;
+            border-color: #ff6b81;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding: 40px 20px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #e94560;
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 0 0 20px rgba(233, 69, 96, 0.4);
+        }
+
+        h2 {
+            color: #f5a623;
+            margin: 30px 0 15px;
+            border-left: 5px solid #e94560;
+            padding-left: 15px;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: #f5a623;
+            margin: 20px 0 10px;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 10px 0;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .rule-block {
+            background: rgba(0,0,0,0.25);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin: 15px 0;
+            border-left: 4px solid #e94560;
+        }
+
+        .rule-block strong {
+            color: #ff6b81;
+        }
+
+        .mod-section {
+            background: rgba(233, 69, 96, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid rgba(233, 69, 96, 0.3);
+        }
+
+        .important {
+            background: rgba(245, 166, 35, 0.12);
+            padding: 12px 18px;
+            border-radius: 10px;
+            border-left: 4px solid #f5a623;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .sticky-nav { gap: 10px; }
+            .sticky-nav a { font-size: 0.95rem; padding: 6px 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sticky-nav">
+        <a href="index.html">🏠 Главная</a>
+        <a href="rules.html">📜 Правила</a>
+        <a href="howplay.html">🎮 Как начать играть</a>
+        <a href="https://vk.com/@-240269696" target="_blank">💬 ВК Сообщество</a>
+    </nav>
+
+    <div class="container">
+        <h1>📜 Правила проекта</h1>
+        <p style="text-align: center; opacity: 0.8; margin-bottom: 25px;">Dozy Gate — соблюдай порядок, играй честно!</p>
+
+        <h2>📌 Общий раздел</h2>
+        <div class="rule-block">
+            <p><strong>1.1</strong> Незнание правил не освобождает от ответственности.</p>
+            <p><strong>1.2</strong> Правила могут изменяться администрацией.</p>
+        </div>
+
+        <h3>🚫 Запрещено:</h3>
+
+        <div class="rule-block">
+            <p><strong>1.3</strong> Оскорбления/унижения игроков → <span style="color: #ff6b81;">мут 30 мин</span></p>
+            <p><strong>1.4</strong> Провокация на нарушение правил → <span style="color: #ff6b81;">мут 60 мин</span></p>
+            <p><strong>1.5</strong> Выдача себя за администратора → <span style="color: #ff6b81;">бан 3 дня</span></p>
+            <p><strong>1.6</strong> Ввод игроков в заблуждение, ложная информация → <span style="color: #ff6b81;">бан 1 день</span></p>
+            <p><strong>1.7</strong> Обход мута → <span style="color: #ff6b81;">бан 4 часа</span></p>
+            <p><strong>1.8</strong> Обход бана → <span style="color: #ff6b81;">бан 2 дня</span></p>
+            <p><strong>1.9</strong> 18+, политический или непристойный контент → <span style="color: #ff6b81;">мут 120 мин</span></p>
+            <p><strong>1.10</strong> Гриферство в любом виде → <span style="color: #ff6b81;">бан 7 дней</span></p>
+            <p><strong>1.11</strong> Использование читов, стороннего ПО → <span style="color: #ff6b81;">бан 38 дней</span></p>
+            <p><strong>1.12</strong> Багоюз → <span style="color: #ff6b81;">бан 8 дней</span></p>
+            <p><strong>1.13</strong> Игра в команде с читером: читер — бан 38 дней, тимейт — <span style="color: #ff6b81;">бан 14 дней</span></p>
+        </div>
+
+        <h2>🛠️ Раздел для модераторов</h2>
+        <div class="mod-section">
+            <p><strong>2.1</strong> Модератор может выдать наказание за правило, не указанное в списке.</p>
+            <p><strong>2.2</strong> Модератор обязан проверять даже друзей на читы.</p>
+            <p><strong>2.3</strong> Игрок обязан слушаться проверяющего в рамках проверки.</p>
+            <div class="important">
+                <strong>⚠️ Важно:</strong> Если модератор просит включить камеру или сказать пароль — выходите из проверки и сообщите администратору.
+            </div>
+            <p><strong>2.4</strong> Модераторы обязаны слушать старших → <span style="color: #ff6b81;">варн</span></p>
+            <p><strong>2.5</strong> Соблюдение субординации → <span style="color: #ff6b81;">варн</span></p>
+            <p><strong>2.6</strong> Запрещено использовать <code>/gm 3</code> или <code>/vanish</code> в личных целях → <span style="color: #ff6b81;">варн, вплоть до снятия</span></p>
+            <p><strong>2.7</strong> Программы для проверки: <strong>AnyDesk</strong>, <strong>Rudesktop</strong> (на выбор) и <strong>Everything</strong> (обязателен у игрока).</p>
+        </div>
+
+        <p style="text-align: center; opacity: 0.6; margin-top: 30px; font-size: 0.9rem;">Нарушаешь — отвечаешь. Играй честно!</p>
+    </div>
+
+</body>
+</html>
